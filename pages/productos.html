@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
@@ -45,8 +47,31 @@
     <main id="arriba">
         <section class="producto">
             <h1>Productos</h1>
-            <div class="label">
-                <img src="../assets/red-label.jpg" alt="Botella Red Label">
+            <div id="carouselExample" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/botellas.jpg" class="d-block w-100" alt="Botellas">
+                </div>
+                    <div class="carousel-item">
+                        <img src="../assets/botella-red.jpg" class="d-block w-100" alt="Botella de Red Label">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/botella-blue.jpg" class="d-block w-100" alt="Botella de Blue Label">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+            <article class="label">
+                <div class="label-img">
+                    <img src="../assets/red-label.jpg" alt="Botella Red Label">
+                </div>
                 <div class="label-text">
                     <h2>Red Label</h2>
                     <p>Johnnie Walker Red Label es la carta de presentación de nuestros whiskies. <br>
@@ -59,9 +84,11 @@
                         <a href="./productos.html">Comprar</a>
                     </div>
                 </div>
-            </div>
-            <div class="label">
-                <img src="../assets/black-label.jpg" alt="Botella Black Label">
+            </article>
+            <article class="label">
+                <div class="label-img">
+                    <img src="../assets/black-label.jpg" alt="Botella Black Label">
+                </div>
                 <div class="label-text">
                     <h2>Black Label</h2>
                     <p>Johnnie Walker Black Label es desde principios del siglo XX un auténtico referente <br>
@@ -73,9 +100,11 @@
                         <a href="./productos.html">Comprar</a>
                     </div>
                 </div>
-            </div>
-            <div class="label">
-                <img src="../assets/double-black-label.png" alt="Botella Double Black Label">
+            </article>
+            <article class="label">
+                <div class="label-img">
+                    <img src="../assets/double-black-label.png" alt="Botella Double Black Label">
+                </div>
                 <div class="label-text">
                     <h2>Double Black Label</h2>
                     <p>Johnnie Walker Double Black es el hermano rebelde de Johnnie Walker Black Label <br>
@@ -86,9 +115,11 @@
                         <a href="./productos.html">Comprar</a>
                     </div>
                 </div>
-            </div>
-            <div class="label">
-                <img src="../assets/green-label.jpg" alt="Botella Green Label">
+            </article>
+            <article class="label">
+                <div class="label-img">     
+                    <img src="../assets/green-label.jpg" alt="Botella Green Label">
+                </div>
                 <div class="label-text">
                     <h2>Green Label</h2>
                     <p>Johnnie Walker Green Label es un tesoro oculto con magníficos secretos que revelar. 
@@ -100,9 +131,11 @@
                         <a href="./productos.html">Comprar</a>
                     </div>
                 </div>
-            </div>
-            <div class="label">
-                <img src="../assets/gold-label.jpg" alt="Botella Gold Label">
+            </article>
+            <article class="label">
+                <div class="label-img">
+                    <img src="../assets/gold-label.jpg" alt="Botella Gold Label">
+                </div>
                 <div class="label-text">
                     <h2>Gold Label</h2>
                     <p>Johnnie Walker Gold Label Reserve es un whisky rico e indulgente, 
@@ -117,9 +150,11 @@
                         <a href="./productos.html">Comprar</a>
                     </div>
                 </div>
-            </div>
-            <div class="label">
-                <img src="../assets/platinium-label.jpg" alt="Botella Platinium Label">
+            </article>
+            <article class="label">
+                <div class="label-img">
+                    <img src="../assets/platinium-label.jpg" alt="Botella Platinium Label">
+                </div>
                 <div class="label-text">
                     <h2>Platinium Label</h2>
                     <p>Johnnie Walker Platinium Label Aged 18 Years es un whisky escocés intensamente rico 
@@ -137,9 +172,11 @@
                         <a href="./productos.html">Comprar</a>
                     </div>
                 </div>
-            </div>
-            <div class="label">
-                <img src="../assets/blue-label.jpg" alt="Botella Blue Label">
+            </article>
+            <article class="label">
+                <div class="label-img">
+                    <img src="../assets/blue-label.jpg" alt="Botella Blue Label">
+                </div>
                 <div class="label-text">
                     <h2>Blue Label</h2>
                     <p>Johnnie Walker Blue Label es una obra maestra inigualable: una combinación exquisita de los whiskies más raros 
@@ -153,10 +190,8 @@
                     </div>
                 </div>
                 
-            </div>
+            </article>
         </section>
-
-    </main>
     </main>
     <footer>
         <img src="../assets/logo-johnnie-walker-blanco.svg" alt="Logo Johnnie Walker">
@@ -177,5 +212,7 @@
             </nav>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
