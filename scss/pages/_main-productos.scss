@@ -1,0 +1,87 @@
+/* main productos */
+
+.main-producto{
+    section{
+        font-family: 'Philosopher', sans-serif;
+        background-color: nth($list: $colors, $n: 5);
+        background-image: url(../assets/logo-amarillo-diagonal.svg);
+        padding: 10px;
+    
+        h1{
+            text-align: center;
+            padding: 20px;
+        }
+
+        .label{
+            padding: 20px;
+            @include flex(row, center, space-evenly);
+
+            div img{
+                width: 300px; 
+                height: auto;
+                background-color: nth($list: $colors, $n: 1);
+                border-radius: 15px;
+                box-shadow: 9px 5px 18px 0px rgba(0,0,0,0.7);
+                -webkit-box-shadow: 9px 5px 18px 0px rgba(0,0,0,0.7);
+                -moz-box-shadow: 9px 5px 18px 0px rgba(0,0,0,0.7);
+            }
+
+            .label-text{
+                background-color: nth($list: $colors, $n: 4);
+                width: 50%; 
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 10px;
+                border-radius: 15px;
+                box-shadow: 9px 5px 18px 0px rgba(0,0,0,0.7);
+                -webkit-box-shadow: 9px 5px 18px 0px rgba(0,0,0,0.7);
+                -moz-box-shadow: 9px 5px 18px 0px rgba(0,0,0,0.7);
+            
+                h2{
+                    font-weight: bold;
+                }
+
+                p{
+                    color: nth($list: $colors, $n: 2);
+                    font-size: 19px;
+                    margin: 10px 0px;
+                }
+
+                .label-text h3{
+                    font-weight: bold;
+                }
+
+                .comprar{
+                    margin-top: 10px;
+
+                    input{
+                        width: 40px;
+                        height: 20px;
+                        border-radius: 5px;
+                    }
+
+                    a{
+                        width: 40px;
+                        height: 20px;
+                        background-color: nth($list: $colors, $n: 3);
+                        color: nth($list: $colors, $n: 1);
+                        text-decoration: none;
+                        padding: 2px;
+                        font-size: 13px;
+                        border-radius: 5px;
+
+                        &:focus{
+                            color: nth($list: $colors, $n: 3);
+                            background-color: nth($list: $colors, $n: 1);
+                            box-shadow: -2px 9px 46px -4px rgba(0,0,0,1) inset;
+                            -webkit-box-shadow: -2px 9px 46px -4px rgba(0,0,0,1) inset;
+                            -moz-box-shadow: -2px 9px 46px -4px rgba(0,0,0,1) inset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

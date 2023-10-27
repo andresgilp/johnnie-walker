@@ -1,0 +1,65 @@
+/* main visitanos */
+
+.main-visitanos{
+    font-family: 'Philosopher', sans-serif;
+    background-color: nth($list: $colors, $n: 5);
+    background-image: url(../assets/logo-amarillo-diagonal.svg);
+
+    .visitanos{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .titulo-visitanos{
+            h1{
+                text-align: center;
+                padding: 20px;
+            }
+
+            .camina {
+                margin: 0rem 5rem;
+                text-align: center;
+                p{
+                    font-size: 18px;
+                }                
+            }
+        }
+
+        .formulario-mapa{
+            background-color: nth($list: $colors, $n: 1);
+            width: 80%;
+            padding: 4rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 1rem 1rem 1rem 1rem;
+            gap: 2rem;
+            border-radius: 15px;
+            box-shadow: 9px 5px 18px 0px rgba(0,0,0,0.7);
+            -webkit-box-shadow: 9px 5px 18px 0px rgba(0,0,0,0.7);
+            -moz-box-shadow: 9px 5px 18px 0px rgba(0,0,0,0.7); 
+
+            .formulario-completo{
+                grid-column: span 1;
+
+                .mensaje{
+                    margin-bottom: 50px;
+
+                    .servicio{
+                        font-size: 14px;
+                        font-style: italic;
+                    }
+                }
+
+                .formulario{
+                    margin: 10px 0px;
+                }
+            }
+            .mapa{
+                grid-column: span 1;
+                padding: 1rem;
+            }        
+        }
+    }
+
+}

@@ -1,0 +1,31 @@
+/* footer */
+
+footer{
+    font-family: 'Philosopher', sans-serif;
+    background-color: nth($list: $colors, $n: 3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    img{
+        width: 200px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: nth($list: $colors, $n: 1);
+        font-size: 18px;
+    }
+
+    section nav ul{
+        list-style: none;
+        display: flex;
+        column-gap: 15px;
+
+        li a img{
+            width: 40px; 
+            height: 40px;
+        }
+    }
+}

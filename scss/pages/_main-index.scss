@@ -1,0 +1,77 @@
+/* main index */
+
+.main-index{
+    background-color: nth($list: $colors, $n: 2);
+    background-image: url(../assets/logo-diagonal.svg);
+
+    section div video{
+        width: 100%; 
+        height: auto
+    }
+
+    .slogan{
+        height: 180px;
+        display: flex;
+        background-color: nth($list: $colors, $n: 4);
+        @include flex(column, center, center);
+        font-family: 'Croissant One', cursive;
+
+        h1{
+            color: nth($list: $colors, $n: 2);
+            font-size: 3rem;
+        }
+    }
+
+    section article div img{
+        width: 500px; 
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 9px 5px 18px 0px rgba(0,0,0,0.7);
+        -webkit-box-shadow: 9px 5px 18px 0px rgba(0,0,0,0.7);
+        -moz-box-shadow: 9px 5px 18px 0px rgba(0,0,0,0.7);
+    }
+
+    .contenido{
+        margin-top: 50px;
+
+        .brindis{
+            padding: 20px;
+            @include flex(row, center, space-evenly);
+
+            .brindis-text{
+                font-family: 'Philosopher', sans-serif;
+                width: 50%; 
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+                padding: 10px;
+
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .red-label{
+            padding: 20px;
+            @include flex(row-reverse, center, space-evenly);
+
+            .red-text{
+                font-family: 'Philosopher', sans-serif;
+                width: 50%; 
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: right;
+                padding: 10px;
+
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

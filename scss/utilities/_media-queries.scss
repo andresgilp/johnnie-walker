@@ -1,0 +1,296 @@
+/* media queries */
+
+/* responsive tablet */
+
+@media screen and (max-width: 1023px){
+
+    /* header */
+    header{
+        width: 100%;
+        height: 2vh;
+    
+        div a .logo{
+            width: 8rem;
+        }
+    
+        nav ul{
+            margin-top: 1rem;
+            column-gap: 1rem;
+        
+            li a{
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+        /* main index */
+
+        .main-index .contenido{
+            .brindis{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin: 1rem 1rem 1rem 1rem;
+                gap: 2rem;
+    
+                .brindis-img{
+                    grid-column: span 1;
+                    img{
+                        object-fit: cover;
+                        width:100%;
+                        height:100%;
+                    }
+                }
+    
+                .brindis-text{
+                    width: 100%;
+                    grid-column: span 1;
+                }
+            }
+        
+            .red-label{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin: 1rem 1rem 1rem 1rem;
+                gap: 2rem;
+    
+                .red-img{
+                    grid-column: span 1;
+                    img{
+                        object-fit: cover;
+                        width:100%;
+                        height:80%;
+                    }
+                }
+    
+                .red-text{
+                    width: 100%;
+                    grid-column: span 1;
+                    text-align: left;
+                }
+            }
+        }
+
+        /* main producto */
+        
+        .main-producto section{
+            
+            .label{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin: 1rem 1rem 1rem 1rem;
+                gap: 2rem;
+                padding: 2rem;
+
+                .label-img{
+                    align-self: start;
+                    width:100%;
+                    height:auto;
+                }
+            
+                .label-text{
+                    align-self: start;
+                    width: 100%; 
+                    height: auto;
+                    p{
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+
+        /* main cocteles */
+
+        .main-cocteles{
+            .titulo-cocteles{
+                margin: 0rem 5rem;
+                p{
+                    font-size: 16px;
+                }
+            }
+
+            .cocteles{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                div img{
+                    width: 100%;
+                }
+            }
+        }
+
+        /* main historia */
+
+        .main-historia .historia{
+            .text-uno p{
+                font-size: 16px;
+            }
+            .text-dos p{
+                font-size: 16px;
+            }
+        }
+
+        /* main visitanos */
+
+        .main-visitanos .visitanos .formulario-mapa .mapa{
+            height: 80%;
+        }
+        
+
+        /* footer */
+
+        footer{
+            height: 10vh;
+
+            img{
+                object-fit: cover;
+                width: 8rem;
+                height: 4rem;
+            }
+
+            a{
+                font-size: 0.8rem;
+            }
+
+            section nav ul{
+                display: flex;
+                column-gap: 1rem;
+                li a img{
+                    object-fit: cover;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+}
+
+/* responsive mobile */
+
+@media screen and (max-width: 767px){
+
+    /* header */
+
+    header{
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 1vh;
+        nav ul{
+            margin-top: 1rem;
+            column-gap: 1rem;
+            li a{
+                font-size: 0.8rem;
+            }
+        }
+    }
+    
+    /* main index */
+
+    .main-index{
+        section .slogan{
+            height: auto;
+            align-items: start;
+            padding: 2rem;
+            h1{
+                font-size: 1.5rem;
+            }
+            h2{
+                font-size: 1rem;
+            }
+        }
+
+        .contenido{
+            .brindis{
+                display:flex;
+                flex-direction: column;
+                gap: 2rem;
+                .brindis-img img{
+                    object-fit: cover;
+                    width:100%;
+                    height:100%;
+                }
+            }
+
+            .red-label{
+                display:flex;
+                flex-direction: column;
+                gap: 2rem;
+                img{
+                    object-fit: cover;
+                    width:100%;
+                    height:80%;
+                }
+            }
+        }
+    }
+
+    /* main producto */
+
+    .main-producto section .label{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* main cocteles */
+
+    .main-cocteles{
+        .titulo-cocteles{
+            margin: 0rem 2rem;
+        }
+        .cocteles{
+            .text-ginger{
+                width: 100%;
+            }
+            .text-lemon{
+                width: 100%;
+            }
+            .text-tea{
+                width: 100%;
+            }
+        }
+    }
+        
+    /* main historia */
+
+    .main-historia .historia{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* main visitanos */
+
+    .main-visitanos{
+        .visitanos .titulo-visitanos .camina {
+            margin: 0rem 2rem;
+            p{
+                font-size: 15px;
+            }                
+        }
+
+        .visitanos .formulario-mapa{
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            .mapa{
+                height: 100%;
+            }
+        }
+    }
+
+    /* footer */
+
+    footer{
+        img{
+            object-fit: cover;
+            width: 6rem;
+            height: 2rem;
+        }
+        section nav ul li img{
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+}

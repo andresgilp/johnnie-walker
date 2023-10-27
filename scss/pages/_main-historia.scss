@@ -1,0 +1,47 @@
+/* main historia */
+
+.main-historia{
+    font-family: 'Philosopher', sans-serif;
+    background-color: nth($list: $colors, $n: 2);
+    background-image: url(../assets/logo-diagonal.svg);
+
+    .historia{
+        padding: 4rem;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        margin: 1rem 1rem 1rem 1rem;
+        gap: 2rem;
+
+        .img-uno{
+            grid-column: span 1;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+                box-shadow: 9px 5px 18px 0px rgba(0,0,0,0.7);
+                -webkit-box-shadow: 9px 5px 18px 0px rgba(0,0,0,0.7);
+                -moz-box-shadow: 9px 5px 18px 0px rgba(0,0,0,0.7);
+            }
+        }
+
+        .text-uno{
+            grid-column: span 1;
+            p{
+                font-size: 22px;
+            }
+        }
+        
+        .text-dos{
+            grid-column: span 2;
+            margin: 1rem 0rem 1rem 0rem;
+            height: 50%;
+            p{
+                font-size: 22px;
+            }
+        }
+    }
+}

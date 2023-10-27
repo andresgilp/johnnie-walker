@@ -1,0 +1,612 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  background-color: #ffffff;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.88);
+  -webkit-box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.88);
+  -moz-box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.88);
+  position: sticky;
+  top: 0;
+}
+header div a .logo {
+  width: 200px;
+}
+header nav ul {
+  margin-top: 20px;
+  display: flex;
+  list-style: none;
+  column-gap: 15px;
+}
+header nav ul li a {
+  font-family: "Philosopher", sans-serif;
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+}
+header nav ul li a:hover {
+  font-size: 130%;
+}
+
+/* main index */
+.main-index {
+  background-color: #fffcee;
+  background-image: url(../assets/logo-diagonal.svg);
+}
+.main-index section div video {
+  width: 100%;
+  height: auto;
+}
+.main-index .slogan {
+  height: 180px;
+  display: flex;
+  background-color: #b04949;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Croissant One", cursive;
+}
+.main-index .slogan h1 {
+  color: #fffcee;
+  font-size: 3rem;
+}
+.main-index section article div img {
+  width: 500px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+}
+.main-index .contenido {
+  margin-top: 50px;
+}
+.main-index .contenido .brindis {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-index .contenido .brindis .brindis-text {
+  font-family: "Philosopher", sans-serif;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 10px;
+}
+.main-index .contenido .brindis .brindis-text p {
+  font-size: 18px;
+}
+.main-index .contenido .red-label {
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-index .contenido .red-label .red-text {
+  font-family: "Philosopher", sans-serif;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  padding: 10px;
+}
+.main-index .contenido .red-label .red-text p {
+  font-size: 18px;
+}
+
+/* main productos */
+.main-producto section {
+  font-family: "Philosopher", sans-serif;
+  background-color: #ffbf35;
+  background-image: url(../assets/logo-amarillo-diagonal.svg);
+  padding: 10px;
+}
+.main-producto section h1 {
+  text-align: center;
+  padding: 20px;
+}
+.main-producto section .label {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-producto section .label div img {
+  width: 300px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+}
+.main-producto section .label .label-text {
+  background-color: #b04949;
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+}
+.main-producto section .label .label-text h2 {
+  font-weight: bold;
+}
+.main-producto section .label .label-text p {
+  color: #fffcee;
+  font-size: 19px;
+  margin: 10px 0px;
+}
+.main-producto section .label .label-text .label-text h3 {
+  font-weight: bold;
+}
+.main-producto section .label .label-text .comprar {
+  margin-top: 10px;
+}
+.main-producto section .label .label-text .comprar input {
+  width: 40px;
+  height: 20px;
+  border-radius: 5px;
+}
+.main-producto section .label .label-text .comprar a {
+  width: 40px;
+  height: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 2px;
+  font-size: 13px;
+  border-radius: 5px;
+}
+.main-producto section .label .label-text .comprar a:focus {
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: -2px 9px 46px -4px rgb(0, 0, 0) inset;
+  -webkit-box-shadow: -2px 9px 46px -4px rgb(0, 0, 0) inset;
+  -moz-box-shadow: -2px 9px 46px -4px rgb(0, 0, 0) inset;
+}
+
+/* main cocteles */
+.main-cocteles {
+  background-color: #fffcee;
+  background-image: url(../assets/logo-diagonal.svg);
+}
+.main-cocteles section video {
+  width: 100%;
+  height: auto;
+}
+.main-cocteles .titulo-cocteles {
+  font-family: "Philosopher", sans-serif;
+  background-color: #b04949;
+  border-radius: 0px 0px 30px 30px;
+  margin: 0rem 10rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 3px 9px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 5px 3px 9px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 5px 3px 9px 0px rgba(0, 0, 0, 0.7);
+}
+.main-cocteles .titulo-cocteles h1 {
+  text-align: center;
+}
+.main-cocteles .titulo-cocteles p {
+  color: #ffffff;
+  font-size: 25px;
+  margin-top: 2rem;
+  text-align: center;
+}
+.main-cocteles .cocteles {
+  font-family: "Philosopher", sans-serif;
+  padding: 4rem;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  margin: 1rem 1rem 1rem 1rem;
+  gap: 8rem 3rem;
+}
+.main-cocteles .cocteles div img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+}
+.main-cocteles .cocteles .text-ginger {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-cocteles .cocteles .text-lemon {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-cocteles .cocteles .text-tea {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* main historia */
+.main-historia {
+  font-family: "Philosopher", sans-serif;
+  background-color: #fffcee;
+  background-image: url(../assets/logo-diagonal.svg);
+}
+.main-historia .historia {
+  padding: 4rem;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  margin: 1rem 1rem 1rem 1rem;
+  gap: 2rem;
+}
+.main-historia .historia .img-uno {
+  grid-column: span 1;
+}
+.main-historia .historia .img-uno img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+}
+.main-historia .historia .text-uno {
+  grid-column: span 1;
+}
+.main-historia .historia .text-uno p {
+  font-size: 22px;
+}
+.main-historia .historia .text-dos {
+  grid-column: span 2;
+  margin: 1rem 0rem 1rem 0rem;
+  height: 50%;
+}
+.main-historia .historia .text-dos p {
+  font-size: 22px;
+}
+
+/* main visitanos */
+.main-visitanos {
+  font-family: "Philosopher", sans-serif;
+  background-color: #ffbf35;
+  background-image: url(../assets/logo-amarillo-diagonal.svg);
+}
+.main-visitanos .visitanos {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-visitanos .visitanos .titulo-visitanos h1 {
+  text-align: center;
+  padding: 20px;
+}
+.main-visitanos .visitanos .titulo-visitanos .camina {
+  margin: 0rem 5rem;
+  text-align: center;
+}
+.main-visitanos .visitanos .titulo-visitanos .camina p {
+  font-size: 18px;
+}
+.main-visitanos .visitanos .formulario-mapa {
+  background-color: #ffffff;
+  width: 80%;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1rem 1rem 1rem 1rem;
+  gap: 2rem;
+  border-radius: 15px;
+  box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
+}
+.main-visitanos .visitanos .formulario-mapa .formulario-completo {
+  grid-column: span 1;
+}
+.main-visitanos .visitanos .formulario-mapa .formulario-completo .mensaje {
+  margin-bottom: 50px;
+}
+.main-visitanos .visitanos .formulario-mapa .formulario-completo .mensaje .servicio {
+  font-size: 14px;
+  font-style: italic;
+}
+.main-visitanos .visitanos .formulario-mapa .formulario-completo .formulario {
+  margin: 10px 0px;
+}
+.main-visitanos .visitanos .formulario-mapa .mapa {
+  grid-column: span 1;
+  padding: 1rem;
+}
+
+/* footer */
+footer {
+  font-family: "Philosopher", sans-serif;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+footer img {
+  width: 200px;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+footer section nav ul {
+  list-style: none;
+  display: flex;
+  column-gap: 15px;
+}
+footer section nav ul li a img {
+  width: 40px;
+  height: 40px;
+}
+
+/* media queries */
+/* responsive tablet */
+@media screen and (max-width: 1023px) {
+  /* header */
+  header {
+    width: 100%;
+    height: 2vh;
+  }
+  header div a .logo {
+    width: 8rem;
+  }
+  header nav ul {
+    margin-top: 1rem;
+    column-gap: 1rem;
+  }
+  header nav ul li a {
+    font-size: 0.8rem;
+  }
+  /* main index */
+  .main-index .contenido .brindis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 1rem 1rem 1rem;
+    gap: 2rem;
+  }
+  .main-index .contenido .brindis .brindis-img {
+    grid-column: span 1;
+  }
+  .main-index .contenido .brindis .brindis-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .main-index .contenido .brindis .brindis-text {
+    width: 100%;
+    grid-column: span 1;
+  }
+  .main-index .contenido .red-label {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 1rem 1rem 1rem;
+    gap: 2rem;
+  }
+  .main-index .contenido .red-label .red-img {
+    grid-column: span 1;
+  }
+  .main-index .contenido .red-label .red-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+  }
+  .main-index .contenido .red-label .red-text {
+    width: 100%;
+    grid-column: span 1;
+    text-align: left;
+  }
+  /* main producto */
+  .main-producto section .label {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 1rem 1rem 1rem;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .main-producto section .label .label-img {
+    align-self: start;
+    width: 100%;
+    height: auto;
+  }
+  .main-producto section .label .label-text {
+    align-self: start;
+    width: 100%;
+    height: auto;
+  }
+  .main-producto section .label .label-text p {
+    font-size: 0.9rem;
+  }
+  /* main cocteles */
+  .main-cocteles .titulo-cocteles {
+    margin: 0rem 5rem;
+  }
+  .main-cocteles .titulo-cocteles p {
+    font-size: 16px;
+  }
+  .main-cocteles .cocteles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-cocteles .cocteles div img {
+    width: 100%;
+  }
+  /* main historia */
+  .main-historia .historia .text-uno p {
+    font-size: 16px;
+  }
+  .main-historia .historia .text-dos p {
+    font-size: 16px;
+  }
+  /* main visitanos */
+  .main-visitanos .visitanos .formulario-mapa .mapa {
+    height: 80%;
+  }
+  /* footer */
+  footer {
+    height: 10vh;
+  }
+  footer img {
+    object-fit: cover;
+    width: 8rem;
+    height: 4rem;
+  }
+  footer a {
+    font-size: 0.8rem;
+  }
+  footer section nav ul {
+    display: flex;
+    column-gap: 1rem;
+  }
+  footer section nav ul li a img {
+    object-fit: cover;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+/* responsive mobile */
+@media screen and (max-width: 767px) {
+  /* header */
+  header {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1vh;
+  }
+  header nav ul {
+    margin-top: 1rem;
+    column-gap: 1rem;
+  }
+  header nav ul li a {
+    font-size: 0.8rem;
+  }
+  /* main index */
+  .main-index section .slogan {
+    height: auto;
+    align-items: start;
+    padding: 2rem;
+  }
+  .main-index section .slogan h1 {
+    font-size: 1.5rem;
+  }
+  .main-index section .slogan h2 {
+    font-size: 1rem;
+  }
+  .main-index .contenido .brindis {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .main-index .contenido .brindis .brindis-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .main-index .contenido .red-label {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .main-index .contenido .red-label img {
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+  }
+  /* main producto */
+  .main-producto section .label {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  /* main cocteles */
+  .main-cocteles .titulo-cocteles {
+    margin: 0rem 2rem;
+  }
+  .main-cocteles .cocteles .text-ginger {
+    width: 100%;
+  }
+  .main-cocteles .cocteles .text-lemon {
+    width: 100%;
+  }
+  .main-cocteles .cocteles .text-tea {
+    width: 100%;
+  }
+  /* main historia */
+  .main-historia .historia {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  /* main visitanos */
+  .main-visitanos .visitanos .titulo-visitanos .camina {
+    margin: 0rem 2rem;
+  }
+  .main-visitanos .visitanos .titulo-visitanos .camina p {
+    font-size: 15px;
+  }
+  .main-visitanos .visitanos .formulario-mapa {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .main-visitanos .visitanos .formulario-mapa .mapa {
+    height: 100%;
+  }
+  /* footer */
+  footer img {
+    object-fit: cover;
+    width: 6rem;
+    height: 2rem;
+  }
+  footer section nav ul li img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
