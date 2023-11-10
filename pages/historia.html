@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
@@ -49,17 +50,17 @@
     </header>
     <main id="arriba" class="main-historia">
         <section class="historia">
-            <div class="img-uno">
+            <div class="img-uno" data-aos="fade-up">
                 <img src="../assets/cartel-antiguo.webp" alt="Cartel antiguo de Johnnie Walker">
             </div>
-            <div class="text-uno">
+            <div class="text-uno" data-aos="fade-up">
                 <p>La historia de Johnnie Walker empieza con un hombre que le regaló su nombre al whisky. 
                 En 1820 el hijo de un granjero abrió las puertas de una tienda de comestibles en el próspero pueblo de Kilmarnock. 
                 El padre de John Walker había fallecido el año anterior y la granja familiar había sido vendida. 
                 Fue un duro comienzo en la vida, pero había algo especial en John que siempre se notaba. Un brillo en sus ojos. 
                 Un fuerte entusiasmo.</p>
             </div>
-            <div class="text-dos">
+            <div class="text-dos" data-aos="fade-up">
                 <p>John tenía un don para el negocio y era un genio en la mezcla de whisky. 
                 Empezó un pequeño, pero muy creciente negocio de whisky y aprovechó la llegada del ferrocarril a Kilmarnock en 1843. 
                 Cuando John murió en 1857, su hijo Alexander asumió las riendas. 
@@ -97,5 +98,9 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
