@@ -18,6 +18,7 @@ header {
   -moz-box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.88);
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 header div a .logo {
   width: 200px;
@@ -26,7 +27,8 @@ header nav ul {
   margin-top: 20px;
   display: flex;
   list-style: none;
-  column-gap: 15px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
 }
 header nav ul li a {
   font-family: "Philosopher", sans-serif;
@@ -234,7 +236,8 @@ header nav ul li a:hover {
 .main-cocteles .cocteles div img {
   width: 80%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
   box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
@@ -280,7 +283,8 @@ header nav ul li a:hover {
 .main-historia .historia .img-uno img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
   box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 9px 5px 18px 0px rgba(0, 0, 0, 0.7);
@@ -375,7 +379,8 @@ footer a {
 footer section nav ul {
   list-style: none;
   display: flex;
-  column-gap: 15px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
 }
 footer section nav ul li a img {
   width: 40px;
@@ -395,7 +400,8 @@ footer section nav ul li a img {
   }
   header nav ul {
     margin-top: 1rem;
-    column-gap: 1rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
   }
   header nav ul li a {
     font-size: 0.8rem;
@@ -411,7 +417,8 @@ footer section nav ul li a img {
     grid-column: span 1;
   }
   .main-index .contenido .brindis .brindis-img img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 100%;
   }
@@ -429,7 +436,8 @@ footer section nav ul li a img {
     grid-column: span 1;
   }
   .main-index .contenido .red-label .red-img img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 80%;
   }
@@ -490,7 +498,8 @@ footer section nav ul li a img {
     height: 10vh;
   }
   footer img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 8rem;
     height: 4rem;
   }
@@ -499,10 +508,12 @@ footer section nav ul li a img {
   }
   footer section nav ul {
     display: flex;
-    column-gap: 1rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
   }
   footer section nav ul li a img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 1.5rem;
     height: 1.5rem;
   }
@@ -520,7 +531,8 @@ footer section nav ul li a img {
   }
   header nav ul {
     margin-top: 1rem;
-    column-gap: 1rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
   }
   header nav ul li a {
     font-size: 0.8rem;
@@ -543,7 +555,8 @@ footer section nav ul li a img {
     gap: 2rem;
   }
   .main-index .contenido .brindis .brindis-img img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 100%;
   }
@@ -553,7 +566,8 @@ footer section nav ul li a img {
     gap: 2rem;
   }
   .main-index .contenido .red-label img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 80%;
   }
@@ -599,7 +613,8 @@ footer section nav ul li a img {
   }
   /* footer */
   footer img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 6rem;
     height: 2rem;
   }
@@ -607,6 +622,4 @@ footer section nav ul li a img {
     width: 1rem;
     height: 1rem;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
